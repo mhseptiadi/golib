@@ -14,7 +14,7 @@ sendgmail.Send(recipients, subject, body, sender, password)
 ```
 dockerNames := []string{"dockerimage1", "dockerimage2"}
 
-err := DockerCheck(dockerNames)
+err := checkdocker.Check(dockerNames)
 if err != nil {
 	fmt.Println(err)
 }
